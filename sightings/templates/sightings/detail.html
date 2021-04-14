@@ -73,12 +73,19 @@
     <title>Central Park Squirrel Sightings in 2020</title>
 </head>
 
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Sighting Detail</li>
+        </ol>
+    </nav>
+
 <p>
 <form action="" method="post">{% csrf_token %}
     <table align="center">{{ form }}</table>
     <br>
     <div class="button">
-        <input type="submit" class='button btn btn-dark' value="Update" style="height:50px;width:100px">
+        <input type="submit" class='button btn btn-outline-success  ' value="Submit" style="height:50px;width:100px">
     </div>
 </form>
 
