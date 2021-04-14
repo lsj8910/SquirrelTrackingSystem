@@ -5,8 +5,28 @@
 {% block title %} - {{ squirrel.age }}{% endblock %}
 
 {% block main %}
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Sighting List</li>
+        </ol>
+    </nav>
+
 <div class="album py-5 bg-light">
   <div class="container">
+
+  <ul class="list-group">
+            {% for squirrel in squirrels %}
+<li class="list-group-item">
+              <small class="text-muted"  data-toggle="tooltip" data-placement="top" title="Seen Date">{{ squirrel.date }}&nbsp;&nbsp;{{ squirrel.location }}&nbsp;&nbsp;{{ squirrel.primary_fur_color }}</small>
+              <small class="text-muted"  data-toggle="tooltip" data-placement="top" title="Seen Date">{{ squirrel.location }}</small>
+                <a class="btn btn-outline-success" style="float:right;" href="{% url 'sightings-view:detail' squirrel.unique_squirrel_id %}">View Detail</a>
+            </li>
+{#  <li class="list-group-item">And a fifth one</li>#}
+            {% endfor %}
+
+</ul>
 
     <div class="row justify-content-center">
       {% for squirrel in squirrels %}

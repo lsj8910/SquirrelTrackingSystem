@@ -4,7 +4,16 @@
 
 {% block title %}Stats of squirrels{% endblock %}
 
+
+
 {% block main %}
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Sighting Stats</li>
+        </ol>
+    </nav>
 <!--<h1>Stats of Squirrels</h1>-->
 <!--<br>-->
 <!--<ul>-->
@@ -20,34 +29,52 @@
   <!--<br>-->
   <!--<li>chasing: {{ chasing }}</li>-->
 <!--</ul>-->
-<div class="container-fluid">
-  <h1>Stats of Squirrels</h1>
-  <ul class="list-group">
-    <li class="list-group-item">
-      Total of observations:
-      <span class="badge">{{ total }}</span>
-    </li>
-    <li class="list-group-item">
-      Average longitude:
-      <span class="badge">{{ avg_long }}</span>
-    </li>
-    <li class="list-group-item">
-      Average latitude:
-      <span class="badge">{{ avg_lat }}</span>
-    </li>
+
+
+Total<div class="progress">
+  <div class="progress-bar bg-info" role="progressbar" style="width: 100%" aria-valuenow="{{ total }}" aria-valuemin="0" aria-valuemax="{{ total }}"></div>
+</div>
+    <br>
+Chasing VS Not Chasing<div class="progress">
+    <br>
+    <br>
+    <br>
+  <div class="progress-bar bg-warning" role="progressbar" style="width: {{ chasing_rate }}%" aria-valuenow="{{ chasing_rate }}" aria-valuemin="0" aria-valuemax="{{ total }}"></div>
+</div>
+        <br>
+
+Climbing VS Not Climbing<div class="progress">
+  <div class="progress-bar bg-danger" role="progressbar" style="width: {{ climbing_rate }}%" aria-valuenow="{{ climbing_rate }}" aria-valuemin="0" aria-valuemax="{{ total }}"></div>
+</div>
+
+
+{#<div class="container-fluid">#}
+{#  <ul class="list-group">#}
+{#    <li class="list-group-item">#}
+{#      Total of observations:#}
+{#      <span class="badge">{{ total }}</span>#}
+{#    </li>#}
+{#    <li class="list-group-item">#}
+{#      Average longitude:#}
+{#      <span class="badge">{{ avg_long }}</span>#}
+{#    </li>#}
+{#    <li class="list-group-item">#}
+{#      Average latitude:#}
+{#      <span class="badge">{{ avg_lat }}</span>#}
+{#    </li>#}
 {#    <li class="list-group-item">#}
 {#      Age:#}
 {#      <span class="badge">{{ age }}</span>#}
 {#    </li>#}
-    <li class="list-group-item">
-      Climbing:
-      <span class="badge">{{ climbing }}</span>
-    </li>
-    <li class="list-group-item">
-      Chasing:
-      <span class="badge">{{ chasing }}</span>
-    </li>
-  </ul>
+{#    <li class="list-group-item">#}
+{#      Climbing:#}
+{#      <span class="badge">{{ climbing }}</span>#}
+{#    </li>#}
+{#    <li class="list-group-item">#}
+{#      Chasing:#}
+{#      <span class="badge">{{ chasing }}</span>#}
+{#    </li>#}
+{#  </ul>#}
 </div>
 
 {% endblock %}

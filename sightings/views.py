@@ -61,7 +61,9 @@ def stats(request):
         'avg_lat': avg_lat,
         'avg_long': avg_long,
         'climbing': climbing,
+        'climbing_rate': '{}'.format(int(climbing / total * 100)),
         'chasing': chasing,
+        'chasing_rate': '{}'.format(int(chasing / total * 100)),
         # 'age': age,
     }
 
