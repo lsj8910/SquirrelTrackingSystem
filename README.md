@@ -1,10 +1,9 @@
 # Squirrel Tracking Web Application
 
 <ul>
-  <li> Group Name: xxx </li>
+  <li> Group Name: Project Group 10 </li>
   <li> Tools For Analytics </li>
-  <li> Contributors: xxx</li>
-  <li> UNI: xxx </li>
+  <li> UNI: yz3954, sl4819 </li>
 </ul>
 
 ## Overview
