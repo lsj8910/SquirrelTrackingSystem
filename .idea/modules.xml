@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/SquirrelTracking.iml" filepath="$PROJECT_DIR$/.idea/SquirrelTracking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SquirrelTrackingSystem.iml" filepath="$PROJECT_DIR$/.idea/SquirrelTrackingSystem.iml" />
     </modules>
   </component>
 </project>
