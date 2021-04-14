@@ -14,7 +14,7 @@
 <ul>
   <li> Management Commands </li>
     <p> import command for importing all the data into the project. The file should be imported from the specificed location. 
-      for example, in this project, the absolute of the file is at final_project/sightings/management/commands/rows.csv
+      in this project, the absolute of the file is at final_project/sightings/management/commands/rows.csv
 
   ```sh
   cd /path/to/project
