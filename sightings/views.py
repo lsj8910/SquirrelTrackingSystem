@@ -1,7 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-from django.shortcuts import get_object_or_404, redirect
-from django.db.models import Avg, Max, Min, Count
+from django.shortcuts import redirect
+from django.db.models import Avg
 from .models import Squirrel
 from .forms import AddRequestForm
 from .forms import UpdateRequestForm
@@ -64,7 +63,6 @@ def stats(request):
         'climbing_rate': '{}'.format(int(climbing / total * 100)),
         'chasing': chasing,
         'chasing_rate': '{}'.format(int(chasing / total * 100)),
-        # 'age': age,
     }
 
     return render(request, 'sightings/stats.html', context)
