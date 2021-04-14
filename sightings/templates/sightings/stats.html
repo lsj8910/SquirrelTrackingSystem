@@ -1,0 +1,54 @@
+{% extends 'sightings/base.html' %}
+
+{% load static %}
+
+{% block title %}Stats of squirrels{% endblock %}
+
+{% block main %}
+<!--<h1>Stats of Squirrels</h1>-->
+<!--<br>-->
+<!--<ul>-->
+  <!--<li>Total of observations: {{ total }}</li>-->
+  <!--<br>-->
+  <!--<li>Average longitude: {{ avg_long }}</li>-->
+  <!--<br>-->
+  <!--<li>Average latitude: {{ avg_lat }}</li>-->
+  <!--<br>-->
+  <!--<li>age: {{ age }}</li>-->
+  <!--<br>-->
+  <!--<li>climbing: {{ climbing }}</li>-->
+  <!--<br>-->
+  <!--<li>chasing: {{ chasing }}</li>-->
+<!--</ul>-->
+<div class="container-fluid">
+  <h1>Stats of Squirrels</h1>
+  <ul class="list-group">
+    <li class="list-group-item">
+      Total of observations:
+      <span class="badge">{{ total }}</span>
+    </li>
+    <li class="list-group-item">
+      Average longitude:
+      <span class="badge">{{ avg_long }}</span>
+    </li>
+    <li class="list-group-item">
+      Average latitude:
+      <span class="badge">{{ avg_lat }}</span>
+    </li>
+{#    <li class="list-group-item">#}
+{#      Age:#}
+{#      <span class="badge">{{ age }}</span>#}
+{#    </li>#}
+    <li class="list-group-item">
+      Climbing:
+      <span class="badge">{{ climbing }}</span>
+    </li>
+    <li class="list-group-item">
+      Chasing:
+      <span class="badge">{{ chasing }}</span>
+    </li>
+  </ul>
+</div>
+
+{% endblock %}
+
