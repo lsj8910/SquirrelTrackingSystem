@@ -17,7 +17,8 @@
       for example, in this project, the absolute of the file is at final_project/sightings/management/commands/rows.csv
 
   ```sh
-  python manage.py import_squirrel_data /path/to/file.csv
+  cd /path/to/project
+  python manage.py import_squirrel_data data/rows.csv
   ```
   
 
@@ -30,7 +31,7 @@
    </p>
   <li> Web pages </li>
     <p>
-  (1) Home page with 4 cardbox, each has a button links to the rest of web pages.  
+  (1) Home page with 3 cardbox, each has a button links to the rest of web pages.  
 
          Located at: /
     
