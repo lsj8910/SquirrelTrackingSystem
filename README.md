@@ -23,7 +23,7 @@
   
 
   Export: used to export the data in CSV format. The file path should be specified to the location of outout destination. 
-  for example, in this project, the absolute of the file is at final_project/sightings/management/commands/rows.csv
+   in this project, the absolute of the file is at final_project/sightings/management/commands/rows.csv
 
    ```sh
   python manage.py export_squirrel_data /path/to/file.csv
