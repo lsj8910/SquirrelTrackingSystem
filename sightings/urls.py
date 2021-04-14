@@ -12,4 +12,3 @@ urlpatterns = [
     path('map/', views.map, name='map'),
     path('sightings/<str:unique_squirrel_id>/', views.detail, name='detail'),
 ]
-
