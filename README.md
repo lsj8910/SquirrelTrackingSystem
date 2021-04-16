@@ -15,6 +15,7 @@
   <li> Management Commands </li>
     <p> import command for importing all the data into the project. The file should be imported from the specificed location. 
       in this project, the absolute of the file is at final_project/sightings/management/commands/rows.csv
+      If there is an error of attempting to write a readonly database, try to run sudo chmod a+w db.sqlite3.
 
   ```sh
   cd /path/to/project
